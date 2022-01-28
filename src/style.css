@@ -1,7 +1,6 @@
 header {
     background: #E9967A;
     display: block;
-    width: 940;
     height: 120px;
 }
 
@@ -62,7 +61,6 @@ nav li {
 }
 
 .produto-preco {
-    font-family: 22px;
     font-weight: bold;
     margin-top: 10px;
 }
@@ -80,4 +78,26 @@ nav li {
 #pulseira {
     width: 100px;
     height: 100px;
+}
+
+.finalizeBuy {
+    position:relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background: rgba(225, 225, 225, 0.35);
+    padding: 40px;
+    border-radius: 25px;
+}
+
+input[id="input"] {
+    width: 100%;
+}
+
+.cardDate{
+    width: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
