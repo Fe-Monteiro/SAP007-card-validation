@@ -2,16 +2,34 @@ import validator from './validator.js';
 
 console.log(validator);
 
-//let cardNumber = document.getElementById("cardNumber");
-const btn = document.getElementById("buttonValidate");
-//const validate = document.getElementById("buttonValidate");
-btn.addEventListener("click", () => {
-  const inputText = document.getElementById("cardNumber");
-  const inputValue = inputText.value;
-  const result = validator.isValid(inputValue);
-    return result;
+const inputText = document.querySelector("[data-form-input]");
 
-})
+ const checkCardNumber = () => {
+   let inputValue = inputText.value;
+   console.log(inputValue);
+   console.log(validator.isValid(inputValue));
+
+   if(validator.isValid(inputValue)){
+     alert("Cartão válido");
+   }else{
+     alert("Cartão inválido");
+   }
+
+ }
+ const cardNumberValue = document.querySelector("[data-form-button]");
+   cardNumberValue.addEventListener("click", checkCardNumber);
+
+ function maskCardNumber () {
+
+ }
+   inputText.addEventListener("keypress", maskCardNumber)
+  //const validate = document.getElementById("buttonValidate");
+
+  //let cardNumber = document.getElementById("cardNumber");
+  //const result = validator.isValid(inputValue);
+    //return result;
+    //alert("Você está conseguindo ler o botão?")
+
 
 // validate.addEventListener("click", function (e) {
 //   e.preventDefault();
@@ -22,7 +40,10 @@ btn.addEventListener("click", () => {
 //   const result = validator.isValid(cardNumber);
 //  // console.log(result);
 
-//   let mascara = validator.maskify(cardNumber);
+//let mascara = 
+//validator.maskify();
+
+//validator.isValid();
 //  // console.log(mascara, "vc está funcionando?")
 //});
 

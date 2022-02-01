@@ -46,24 +46,26 @@
     <p><em><strong>Dados do Cartão</strong></em></p>
 
     <div class="finalizeBuy" action="">
-        <div class="cardNumber">
-          <input id="cardNumber" type="text" class="form-input" placeholder="Digite o número do cartão." minlength="16" maxlength="19" required="required">
+        <div class="textInput">
+          <input id="cardNumber" type="text" class="form-input" placeholder="Digite o número do cartão." minlength="16" maxlength="19" required="required" data-form-input>
         </div>
 
       <div class="cardDate">
-        <div class="expirity">
+        <form class="expirity">
           <input id="code1" type="text" class="expirity_input" placeholder="00" minlength="2" maxlength="2" required="required">
           <input id="code2" type="text" class="expirity_input" placeholder="00" minlength="2" maxlength="2" required="required">
-        </div>
+        </form>
 
-        <div class="cvv">
+        <form class="cvv">
           <input id="code" type="text" class="cvv_input" placeholder="000" minlength="3" maxlength="3" required="required">
-        </div>
+        </form>
       </div>
 
       <form class="form" action="">
-        <button class="buttonCheck" type="submit" id="buttonValidate" value="Verificar">Confirmar</button>
+        <button id="buttonValidate" type="button" class="buttonCheck" value="Verificar" data-form-button>Confirmar</button>
       </form>
+
+      <span id="maskNumber" class="maskNumber"></span>
 <!-- 
       <footer class="containerFooter">
         <div class="createdBy">Criado por Fernanda Monteiro</div>
