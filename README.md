@@ -1,34 +1,29 @@
 # Cartão de Crédito Válido
 
-## Índice
-
-- [1. Introdução](#1-Introdução)
-- [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações gerais](#4-consideracoes-gerais)
-- [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-- [6. Hacker edition](#6-hacker-edition)
-- [7. Considerações técnicas](#7-considerações-técnicas)
-- [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
-- [9. Checklist](#9-checklist)
-
----
-
 ## 1. Introdução
 
-O [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), também
-chamado de módulo 10, é um método de soma de verificação, usado para validar
-números de identificação, como o IMEI de telefones celulares, cartões de crédito
+A relojoaria Fernanda Monteiro traz além de muitas novidades no quesito de jóias, trás a oportunidade de você realizar suas compras com o seu cartão de crédito. Nossa página está atualizada e trás o que há de melhor para agilizar o seu processo de compra.
+Para validar o seu cartão de crédito, utilizamos a análise através do Algoritmo de Luhn que é a forma como é mais conhecida, ou também como é chamado de módulo 10. O algoritmo de Luhn é um método de soma de verificação, que é usado para validar números de identificação, como o IMEI de telefones celulares, cartões de crédito
 etc.
+Fonte [Wikipedia](https://en.wikipedia.org/wiki/Luhn_algorithm).
 
-Esse algoritmo é simples. Obtemos o inverso do número a ser verificado (que
-contém apenas dígitos [0-9]); todos os números que ocupam uma posição par devem
-ser multiplicados por dois; se esse número for maior ou igual a 10, devemos
-adicionar os dígitos do resultado; o número a verificar será válido se a soma de
-seus dígitos finais for um múltiplo de 10.
+Segue abaixo os passos para realizar essa validação:
 
-![gráfico do algoritmo de
-Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+1º Começando da direita para a esquerda, multiplique por dois cada digito par;
+
+<img src="1.png">
+
+2º Caso a multiplicação dos dígitos resulte em um número com dois digitos, some os digitos para obeter um núnero de dígito;
+
+<img src="2.png">
+
+3º Agora adicione os digitos impares que não foram multiplicados, aos números pares que foram multiplicado;
+
+<img src="3.png">
+
+4º Agora some todos os dígitos deste número, e se a soma final for divisível por 10, o número do cartão de crédito é válido. Se não for divisível por 10, o número do cartão é inválido.
+
+<img src="4.png">
 
 ## 2. Resumo do projeto
 

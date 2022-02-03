@@ -46,6 +46,7 @@
     <p><em><strong>Dados do Cartão</strong></em></p>
 
     <div class="finalizeBuy" action="">
+        <img src="chip.png" width="60px">
         <div class="textInput">
           <input id="cardNumber" type="text" class="form-input" placeholder="Digite o número do cartão." minlength="16" maxlength="19" required="required" data-form-input>
         </div>
@@ -55,15 +56,19 @@
           <input id="code1" type="text" class="expirity_input" placeholder="00" minlength="2" maxlength="2" required="required">
           <input id="code2" type="text" class="expirity_input" placeholder="00" minlength="2" maxlength="2" required="required">
         </form>
+      </div>
 
+      <div>
         <form class="cvv">
           <input id="code" type="text" class="cvv_input" placeholder="000" minlength="3" maxlength="3" required="required">
         </form>
       </div>
 
-      <form class="form" action="">
-        <button id="buttonValidate" type="button" class="buttonCheck" value="Verificar" data-form-button>Confirmar</button>
-      </form>
+      <div>
+        <form class="form" action="">
+          <button id="buttonValidate" type="button" class="buttonCheck" value="Verificar" data-form-button>Confirmar</button>
+        </form>
+      </div>
 
       <span id="maskNumber" class="maskNumber"></span>
 <!-- 
