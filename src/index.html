@@ -13,7 +13,7 @@
             <ul>
               <li>Sobre</li>
               <li>Produtos</li>
-              <li>Contatos</li>
+              <li><a href="https://github.com/Fe-Monteiro" target="_blank">Contatos</a></li>
             </ul>
         </nav>
       </div>
@@ -42,24 +42,17 @@
       </ul>
     </main>
 
-    <h3>Finalizar Compra</h3>
-    <p><em><strong>Dados do Cartão</strong></em></p>
-
+    <h3>Finalizar Compra</h3><br>
     <div class="finalizeBuy" action="">
-        <div class="textInput">
+        <form class="textInput">
           <input id="cardNumber" type="text" class="form-input" placeholder="Digite o número do cartão." minlength="16" maxlength="19" required="required" data-form-input>
-        </div>
+        </form>
 
       <div class="cardDate">
-        <form class="expirity">
-          <input id="code1" type="text" class="expirity_input" placeholder="00" minlength="2" maxlength="2" required="required">
-          <input id="code2" type="text" class="expirity_input" placeholder="00" minlength="2" maxlength="2" required="required">
-        </form>
-      </div>
-
-      <div>
-        <form class="cvv">
-          <input id="code" type="text" class="cvv_input" placeholder="000" minlength="3" maxlength="3" required="required">
+        <form>
+          <input id="code1" type="number" class="expirity" min="1" max="12" required="required">
+          <input id="code2" type="number" class="yearexpirity" min="2022" max="2030" required="required">
+          <input id="code3" type="text" class="cvv-input" placeholder="000" minlength="3" maxlength="3" required="required">
         </form>
       </div>
 
@@ -68,30 +61,18 @@
           <button id="buttonValidate" type="button" class="buttonCheck" value="Verificar" data-form-button>Confirmar</button>
         </form>
       </div>
-
-      <span id="maskNumber" class="maskNumber"></span>
-<!-- 
-      <footer class="containerFooter">
-        <div class="createdBy">Criado por Fernanda Monteiro</div>
-        <div class="socialMedias">
-          <a href="https://github.com/Fe-Monteiro" target="_blank">
-             <img
-              class="iconSocialMedias"
-              src="assets/Github_Icon.svg"
-              alt="GitHub Icon"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/fernanda-ribeiro-8b47b9145/"
-            target="_blank">
-            <img
-              class="iconSocialMedias"
-              src="assets/LinkedIn_Icon.svg"
-              alt="LinkedIn Icon"
-          /></a>
-        </div>
-      </footer>-->
-
     </div>
+    
     <script src="index.js" type="module"></script>
+
+    <footer class="containerFooter">
+      <div class="createdBy">Criado por <strong>Fernanda Monteiro</strong></div>
+        <div class="socialMedias">
+          <a href="https://www.linkedin.com/in/fernanda-ribeiro-8b47b9145/" target="_blank">
+            <img class="iconSocialMedias" src="assets/LinkedIn_Icon.svg" alt="LinkedIn"/></a>
+        </div>
+    </footer>
+
   </body>
+
 </html>
