@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <title>Fernanda Monteiro Jóias</title>
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <h1><img id="logo" src="f.jpg"></h1>
+        <nav>
+            <ul>
+              <li>Sobre</li>
+              <li>Produtos</li>
+              <li><a href="https://github.com/Fe-Monteiro" target="_blank">Contatos</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <ul class="produtos">
+        <li>
+          <h2>Brinco</h2>
+          <img id="brinco" src="brinco.jpg">
+          <p class="produto-descricao">Brinco Coração Ouro 18k Pedra Branca Brilhante</p>
+          <p class="produto-preco">R$5.700</p>
+        </li>
+        <li>
+          <h2>Aliança</h2>
+          <img id="alianca" src="aliancaone.jpg">
+          <p class="produto-descricao">Aliança Ouro 18k Pedra Brilhante</p>
+          <p class="produto-preco">R$7.800</p>
+        </li>
+        <li>
+          <h2>Pulseira</h2>
+          <img id="pulseira" src="pulseira.png">
+          <p class="produto-descricao">Pulseira Ouro 18k Pedraria Brilhante</p>
+          <p class="produto-preco">R$10.000</p>
+        </li>
+      </ul>
+    </main>
+
+    <h3>Finalizar Compra</h3><br>
+    <div class="finalizeBuy" action="">
+        <form class="textInput">
+          <input id="cardNumber" type="text" class="form-input" placeholder="Digite o número do cartão." minlength="16" maxlength="19" required="required" data-form-input>
+        </form>
+
+      <div class="cardDate">
+        <form>
+          <input id="code1" type="number" class="expirity" min="1" max="12" required="required">
+          <input id="code2" type="number" class="yearexpirity" min="2022" max="2030" required="required">
+          <input id="code3" type="text" class="cvv-input" placeholder="CVV" minlength="3" maxlength="3" required="required">
+        </form>
+      </div>
+
+      <div>
+        <form class="form" action="">
+          <button id="buttonValidate" type="button" class="buttonCheck" value="Verificar" data-form-button>Confirmar</button>
+        </form>
+      </div>
+    </div>
+    
+    <script src="index.js" type="module"></script>
+
+    <footer class="containerFooter">
+      <div class="createdBy">Criado por <strong>Fernanda Monteiro</strong></div>
+        <div class="socialMedias">
+          <a href="https://www.linkedin.com/in/fernanda-ribeiro-8b47b9145/" target="_blank">
+            <img class="iconSocialMedias" src="assets/LinkedIn_Icon.svg" alt="LinkedIn"/></a>
+        </div>
+    </footer>
+
+  </body>
+
+</html>
