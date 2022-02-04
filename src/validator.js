@@ -19,17 +19,12 @@ const validator = {
             valor multiplicado. Caso o novo valor atribuido ao nDigit seja maior do que 9, ele vai
             pegar o novo valor do nDigit e subtrair 9, o resultado dessa subtração, será o novo valor
             do nDigit*/
-        // }else if(nDigit > 9) {
-        //   nDigit -= 9  /* Aqui o nDigit já está multiplicado e se for maior do que 9 Caso o novo valor atribuido ao nDigit seja maior do que 9, ele vai
-        //     pegar o novo valor do nDigit e subtrair 9, o resultado dessa subtração, será o novo valor
-        //     do nDigit*/
-        // } else {
-        // nDigit = nDigit.value;
-      }
+           }
       
       nCheck += nDigit; /*O nCheck é a variavel onde estamos somando o valor de todos os digitos (nDigit)
-              //  após a tratativa de somar digito sim e digito não que está na condição if (skipDigit). Dessa
-              //  forma, a cada vez que a condição For for executada, será somado no nCheck o valor do atual nDigit*/
+              após a tratativa de somar digito sim e digito não que está na condição if (skipDigit).
+              Dessa forma, a cada vez que a condição For for executada, será somado no nCheck o valor
+              do atual nDigit*/
 
 
 
