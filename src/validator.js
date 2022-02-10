@@ -7,13 +7,16 @@ const validator = {
     }
 
     let nCheck = 0; //Var onde vou somar todos os campos para verificação
-    let skipDigit = false; //Var onde vou modificar o liga e desliga para pular as casas no cardNum
+    let skipDigit = false; //ele que vai me ajudar a identificar quando terá que multiplicar por dois
+                            //ou não.
 
     for (let nPosition = cardNumberValue.length - 1; nPosition >= 0; nPosition--) {
       let cDigit = cardNumberValue.charAt(nPosition); //Var que informa o valor na posição atual
-      let nDigit = parseInt(cDigit, 10); /*Var que garante que o número da posição atual esteja inteiro na base decimal*/
+                                                         //dentro do número do cartão
+      let nDigit = parseInt(cDigit, 10); /*Var que garante que o número da posição atual esteja inteiro
+                                          na base decimal*/
 
-      if (skipDigit) { //Entra na função If somente se o skipDigit for igual a true
+      if (skipDigit) { //Entra na função If somente se o (pula digito) skipDigit for igual a true
         if ((nDigit *= 2) > 9) nDigit -= 9; /*Se o skipDigit for true, ele vai pegar a posição atual
             que está sendo informada na var nDigit, vai multiplicar por 2 e atribuir ao nDigit esse
             valor multiplicado. Caso o novo valor atribuido ao nDigit seja maior do que 9, ele vai

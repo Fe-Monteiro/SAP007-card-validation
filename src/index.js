@@ -1,7 +1,5 @@
 import validator from './validator.js'; 
 
-console.log(validator);
-
 
  const checkCardNumber = () => {
    const inputText = document.querySelector("[data-form-input]");
